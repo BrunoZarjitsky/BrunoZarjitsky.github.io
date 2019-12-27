@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+    <head lang = "en">
+        <meta charset = "UTF-8">
+        <title>Zarjitsky</title>
+    </head>
+    <body>
+        <button type = "button" onclick = "myFunction()"> LED </button>
+	<p id = "led">0</p>
+    <script>
+    function myFunction() {
+	var valor = document.getElementById("led").innerText;
+	if (valor === "0"){
+		document.getElementById("led").innerText = "1";
+	}else {
+		document.getElementById("led").innerText = "0";
+	}
+    }
+    </script>
+    </body>
+</html>
